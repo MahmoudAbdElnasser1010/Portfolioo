@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="800" height="500">
+  <defs>
+    <linearGradient id="bg21" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#150d02"/>
+      <stop offset="100%" stop-color="#a17908"/>
+    </linearGradient>
+    <linearGradient id="card21" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="rgba(255,255,255,0.10)"/>
+      <stop offset="100%" stop-color="rgba(255,255,255,0.02)"/>
+    </linearGradient>
+    <radialGradient id="glow21" cx="30%" cy="20%" r="60%">
+      <stop offset="0%" stop-color="#a17908" stop-opacity="0.55"/>
+      <stop offset="100%" stop-color="#a17908" stop-opacity="0"/>
+    </radialGradient></defs>
+  <rect width="800" height="500" fill="url(#bg21)"/>
+  <rect width="800" height="500" fill="url(#glow21)"/>
+  <rect x="295.0" y="48.0" width="210.0" height="404.0" rx="28" fill="url(#card21)" stroke="rgba(255,255,255,0.1)" stroke-width="2"/>
+<rect x="315.0" y="78.0" width="170.0" height="110.0" rx="14" fill="#fff3c4" opacity="0.85"/>
+<rect x="315.0" y="212.0" width="170.0" height="42" rx="10" fill="rgba(255,255,255,0.08)"/>
+<circle cx="337.0" cy="233.0" r="12" fill="rgba(255,255,255,0.3)"/>
+<rect x="359.0" y="226.0" width="100.0" height="12" rx="6" fill="rgba(255,255,255,0.2)"/>
+<rect x="315.0" y="266.0" width="170.0" height="42" rx="10" fill="rgba(255,255,255,0.08)"/>
+<circle cx="337.0" cy="287.0" r="12" fill="rgba(255,255,255,0.3)"/>
+<rect x="359.0" y="280.0" width="100.0" height="12" rx="6" fill="rgba(255,255,255,0.2)"/>
+<rect x="315.0" y="320.0" width="170.0" height="42" rx="10" fill="rgba(255,255,255,0.08)"/>
+<circle cx="337.0" cy="341.0" r="12" fill="rgba(255,255,255,0.3)"/>
+<rect x="359.0" y="334.0" width="100.0" height="12" rx="6" fill="rgba(255,255,255,0.2)"/>
+<rect x="48.0" y="150.0" width="217.0" height="110.0" rx="14" fill="url(#card21)" stroke="rgba(255,255,255,0.08)"/>
+<rect x="535.0" y="240.0" width="217.0" height="110.0" rx="14" fill="url(#card21)" stroke="rgba(255,255,255,0.08)"/>
+</svg>

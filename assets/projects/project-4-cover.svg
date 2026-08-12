@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" width="1600" height="900">
+  <defs>
+    <linearGradient id="bg42" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#160e03"/>
+      <stop offset="100%" stop-color="#ffe066"/>
+    </linearGradient>
+    <linearGradient id="card42" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="rgba(255,255,255,0.10)"/>
+      <stop offset="100%" stop-color="rgba(255,255,255,0.02)"/>
+    </linearGradient>
+    <radialGradient id="glow42" cx="30%" cy="20%" r="60%">
+      <stop offset="0%" stop-color="#ffe066" stop-opacity="0.55"/>
+      <stop offset="100%" stop-color="#ffe066" stop-opacity="0"/>
+    </radialGradient></defs>
+  <rect width="1600" height="900" fill="url(#bg42)"/>
+  <rect width="1600" height="900" fill="url(#glow42)"/>
+  <rect x="96.0" y="96.0" width="1408.0" height="708.0" rx="20" fill="url(#card42)" stroke="rgba(255,255,255,0.08)"/>
+<polygon points="800.0,350.0 877.9,395.0 877.9,485.0 800.0,530.0 722.1,485.0 722.1,395.0" fill="none" stroke="#f6bf1d" stroke-width="3" opacity="0.9"/>
+<circle cx="800.0" cy="440.0" r="46" fill="#f6bf1d" opacity="0.9"/>
+<rect x="710.0" y="560.0" width="180" height="16" rx="8" fill="rgba(255,255,255,0.25)"/>
+</svg>

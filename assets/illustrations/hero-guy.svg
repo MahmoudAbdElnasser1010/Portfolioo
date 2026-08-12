@@ -1,0 +1,96 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 520" width="420" height="520" role="img" aria-label="Illustration of a man standing casually while holding an open laptop">
+  <defs>
+    <radialGradient id="heroCharGlow" cx="50%" cy="42%" r="55%">
+      <stop offset="0%" stop-color="#f6bf1d" stop-opacity="0.35"/>
+      <stop offset="100%" stop-color="#f6bf1d" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="heroScreenGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f6bf1d"/>
+      <stop offset="100%" stop-color="#ffe066"/>
+    </linearGradient>
+    <linearGradient id="heroHoodieGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f8cc42"/>
+      <stop offset="100%" stop-color="#a17908"/>
+    </linearGradient>
+  </defs>
+
+  <!-- ambient glow -->
+  <circle cx="210" cy="230" r="210" fill="url(#heroCharGlow)"/>
+
+  <!-- floating background accents -->
+  <circle cx="52" cy="86" r="5" fill="#ffe066" opacity="0.6"/>
+  <circle cx="376" cy="128" r="7" fill="#fad668" opacity="0.5"/>
+  <circle cx="368" cy="360" r="5" fill="#fff3c4" opacity="0.55"/>
+  <circle cx="38" cy="360" r="4" fill="#ffe066" opacity="0.5"/>
+  <rect x="348" y="220" width="16" height="16" rx="3" fill="none" stroke="#ffe066" stroke-width="2" opacity="0.5" transform="rotate(20 356 228)"/>
+  <rect x="30" y="200" width="12" height="12" rx="2" fill="none" stroke="#fad668" stroke-width="2" opacity="0.45" transform="rotate(-12 36 206)"/>
+
+  <!-- ground shadow -->
+  <ellipse cx="212" cy="444" rx="98" ry="15" fill="#000814" opacity="0.35"/>
+
+  <!-- legs -->
+  <path d="M190,288 L182,338 L177,414" fill="none" stroke="#3d362e" stroke-width="32" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M230,288 L242,345 L251,427" fill="none" stroke="#3d362e" stroke-width="32" stroke-linecap="round" stroke-linejoin="round"/>
+  <!-- ankle cuffs -->
+  <circle cx="177" cy="404" r="17" fill="#55483a"/>
+  <circle cx="251" cy="417" r="17" fill="#55483a"/>
+
+  <!-- sneakers -->
+  <g>
+    <path d="M155,412 Q155,398 173,398 L188,398 Q200,398 205,410 L207,424 Q207,433 197,433 L163,433 Q155,433 155,424 Z" fill="#f4f6fb" stroke="#c7cede" stroke-width="1.5"/>
+    <rect x="155" y="424" width="52" height="9" rx="4.5" fill="#ffe066"/>
+    <path d="M170,404 L182,404 M170,410 L184,410" stroke="#c7cede" stroke-width="2" stroke-linecap="round"/>
+  </g>
+  <g>
+    <path d="M229,425 Q229,411 247,411 L262,411 Q274,411 279,423 L281,437 Q281,446 271,446 L237,446 Q229,446 229,437 Z" fill="#f4f6fb" stroke="#c7cede" stroke-width="1.5"/>
+    <rect x="229" y="437" width="52" height="9" rx="4.5" fill="#ffe066"/>
+    <path d="M244,417 L256,417 M244,423 L258,423" stroke="#c7cede" stroke-width="2" stroke-linecap="round"/>
+  </g>
+
+  <!-- torso (hoodie) -->
+  <rect x="163" y="155" width="94" height="140" rx="32" fill="url(#heroHoodieGrad)"/>
+  <path d="M195,157 Q210,178 225,157 Z" fill="#5c4408"/>
+  <line x1="210" y1="168" x2="210" y2="284" stroke="#5c4408" stroke-width="3"/>
+  <rect x="180" y="228" width="60" height="32" rx="14" fill="#5c4408" opacity="0.55"/>
+
+  <!-- arms (drawn in front of torso edges, same hoodie tone) -->
+  <path d="M178,168 L150,212 L162,268" fill="none" stroke="#f8cc42" stroke-width="30" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M242,168 L270,212 L258,268" fill="none" stroke="#f8cc42" stroke-width="30" stroke-linecap="round" stroke-linejoin="round"/>
+  <!-- sleeve cuffs -->
+  <circle cx="162" cy="256" r="15" fill="#eef2fa"/>
+  <circle cx="258" cy="256" r="15" fill="#eef2fa"/>
+
+  <!-- laptop -->
+  <path d="M170,206 L250,206 L258,282 L162,282 Z" fill="#10131c"/>
+  <path d="M178,216 L242,216 L248,272 L172,272 Z" fill="url(#heroScreenGrad)"/>
+  <rect x="184" y="224" width="52" height="6" rx="3" fill="#ffffff" opacity="0.85"/>
+  <rect x="184" y="238" width="14" height="26" rx="2" fill="#ffffff" opacity="0.5"/>
+  <rect x="202" y="248" width="14" height="16" rx="2" fill="#ffffff" opacity="0.65"/>
+  <rect x="220" y="232" width="14" height="32" rx="2" fill="#ffffff" opacity="0.8"/>
+  <path d="M150,284 L270,284 L259,300 L161,300 Z" fill="#d7dce6"/>
+  <path d="M150,284 L270,284 L268,290 L152,290 Z" fill="#c3c9d8"/>
+
+  <!-- hands gripping the laptop base -->
+  <circle cx="163" cy="270" r="15" fill="#e8a978"/>
+  <circle cx="257" cy="270" r="15" fill="#e8a978"/>
+
+  <!-- neck -->
+  <rect x="198" y="140" width="24" height="24" rx="8" fill="#e8a978"/>
+
+  <!-- head -->
+  <circle cx="210" cy="100" r="44" fill="#1a1f2e"/>
+  <circle cx="210" cy="112" r="37" fill="#e8a978"/>
+  <path d="M174,104 Q170,64 210,60 Q250,64 246,104 Q246,80 210,78 Q174,80 174,104 Z" fill="#1a1f2e"/>
+
+  <!-- glasses -->
+  <g fill="none" stroke="#ffe066" stroke-width="2.5">
+    <rect x="184" y="102" width="24" height="18" rx="8"/>
+    <rect x="212" y="102" width="24" height="18" rx="8"/>
+    <line x1="208" y1="110" x2="212" y2="110"/>
+  </g>
+
+  <!-- face -->
+  <circle cx="196" cy="111" r="2.6" fill="#1a1f2e"/>
+  <circle cx="224" cy="111" r="2.6" fill="#1a1f2e"/>
+  <path d="M199,128 Q210,136 221,128" fill="none" stroke="#8a5a34" stroke-width="2.5" stroke-linecap="round"/>
+</svg>

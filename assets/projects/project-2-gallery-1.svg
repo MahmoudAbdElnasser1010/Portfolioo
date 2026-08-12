@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 560" width="800" height="560">
+  <defs>
+    <linearGradient id="bg23" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#a17908"/>
+      <stop offset="100%" stop-color="#150d02"/>
+    </linearGradient>
+    <linearGradient id="card23" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="rgba(255,255,255,0.10)"/>
+      <stop offset="100%" stop-color="rgba(255,255,255,0.02)"/>
+    </linearGradient>
+    <radialGradient id="glow23" cx="30%" cy="20%" r="60%">
+      <stop offset="0%" stop-color="#150d02" stop-opacity="0.55"/>
+      <stop offset="100%" stop-color="#150d02" stop-opacity="0"/>
+    </radialGradient></defs>
+  <rect width="800" height="560" fill="url(#bg23)"/>
+  <rect width="800" height="560" fill="url(#glow23)"/>
+  <rect x="282.4" y="48.0" width="235.2" height="464.0" rx="28" fill="url(#card23)" stroke="rgba(255,255,255,0.1)" stroke-width="2"/>
+<rect x="302.4" y="78.0" width="195.2" height="123.2" rx="14" fill="#fff3c4" opacity="0.85"/>
+<rect x="302.4" y="225.2" width="195.2" height="42" rx="10" fill="rgba(255,255,255,0.08)"/>
+<circle cx="324.4" cy="246.2" r="12" fill="rgba(255,255,255,0.3)"/>
+<rect x="346.4" y="239.2" width="125.19999999999999" height="12" rx="6" fill="rgba(255,255,255,0.2)"/>
+<rect x="302.4" y="279.2" width="195.2" height="42" rx="10" fill="rgba(255,255,255,0.08)"/>
+<circle cx="324.4" cy="300.2" r="12" fill="rgba(255,255,255,0.3)"/>
+<rect x="346.4" y="293.2" width="125.19999999999999" height="12" rx="6" fill="rgba(255,255,255,0.2)"/>
+<rect x="302.4" y="333.2" width="195.2" height="42" rx="10" fill="rgba(255,255,255,0.08)"/>
+<circle cx="324.4" cy="354.2" r="12" fill="rgba(255,255,255,0.3)"/>
+<rect x="346.4" y="347.2" width="125.19999999999999" height="12" rx="6" fill="rgba(255,255,255,0.2)"/>
+<rect x="48.0" y="168.0" width="204.39999999999998" height="123.2" rx="14" fill="url(#card23)" stroke="rgba(255,255,255,0.08)"/>
+<rect x="547.5999999999999" y="268.8" width="204.40000000000003" height="123.2" rx="14" fill="url(#card23)" stroke="rgba(255,255,255,0.08)"/>
+</svg>

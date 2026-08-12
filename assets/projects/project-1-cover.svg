@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" width="1600" height="900">
+  <defs>
+    <linearGradient id="bg12" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#170b02"/>
+      <stop offset="100%" stop-color="#f6bf1d"/>
+    </linearGradient>
+    <linearGradient id="card12" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="rgba(255,255,255,0.10)"/>
+      <stop offset="100%" stop-color="rgba(255,255,255,0.02)"/>
+    </linearGradient>
+    <radialGradient id="glow12" cx="30%" cy="20%" r="60%">
+      <stop offset="0%" stop-color="#f6bf1d" stop-opacity="0.55"/>
+      <stop offset="100%" stop-color="#f6bf1d" stop-opacity="0"/>
+    </radialGradient></defs>
+  <rect width="1600" height="900" fill="url(#bg12)"/>
+  <rect width="1600" height="900" fill="url(#glow12)"/>
+  <rect x="96.0" y="96.0" width="256.0" height="708.0" rx="14" fill="url(#card12)" stroke="rgba(255,255,255,0.08)"/>
+<rect x="114.0" y="126.0" width="160.0" height="12" rx="6" fill="rgba(255,255,255,0.14)"/>
+<rect x="114.0" y="170.0" width="160.0" height="12" rx="6" fill="rgba(255,255,255,0.35)"/>
+<rect x="114.0" y="214.0" width="160.0" height="12" rx="6" fill="rgba(255,255,255,0.14)"/>
+<rect x="114.0" y="258.0" width="160.0" height="12" rx="6" fill="rgba(255,255,255,0.14)"/>
+<rect x="114.0" y="302.0" width="160.0" height="12" rx="6" fill="rgba(255,255,255,0.14)"/>
+<rect x="376.0" y="96.0" width="362.6666666666667" height="252.00000000000003" rx="14" fill="url(#card12)" stroke="rgba(255,255,255,0.08)"/>
+<rect x="394.0" y="116.0" width="181.33333333333334" height="10" rx="5" fill="rgba(255,255,255,0.3)"/>
+<rect x="394.0" y="136.0" width="126.93333333333334" height="22" rx="6" fill="#ffe066" opacity="0.85"/>
+<rect x="758.6666666666667" y="96.0" width="362.6666666666667" height="252.00000000000003" rx="14" fill="url(#card12)" stroke="rgba(255,255,255,0.08)"/>
+<rect x="776.6666666666667" y="116.0" width="181.33333333333334" height="10" rx="5" fill="rgba(255,255,255,0.3)"/>
+<rect x="776.6666666666667" y="136.0" width="126.93333333333334" height="22" rx="6" fill="#ffe066" opacity="0.85"/>
+<rect x="1141.3333333333335" y="96.0" width="362.6666666666667" height="252.00000000000003" rx="14" fill="url(#card12)" stroke="rgba(255,255,255,0.08)"/>
+<rect x="1159.3333333333335" y="116.0" width="181.33333333333334" height="10" rx="5" fill="rgba(255,255,255,0.3)"/>
+<rect x="1159.3333333333335" y="136.0" width="126.93333333333334" height="22" rx="6" fill="#ffe066" opacity="0.85"/>
+<rect x="376.0" y="368.0" width="1128.0" height="436.0" rx="14" fill="url(#card12)" stroke="rgba(255,255,255,0.08)"/>
+<rect x="406.0" y="473.0" width="152.57142857142858" height="147" rx="4" fill="#ffe066" opacity="0.4"/>
+<rect x="566.5714285714286" y="552.0" width="152.57142857142858" height="68" rx="4" fill="#ffe066" opacity="0.48000000000000004"/>
+<rect x="727.1428571428571" y="437.0" width="152.57142857142858" height="183" rx="4" fill="#ffe066" opacity="0.56"/>
+<rect x="887.7142857142858" y="512.0" width="152.57142857142858" height="108" rx="4" fill="#ffe066" opacity="0.64"/>
+<rect x="1048.2857142857142" y="557.0" width="152.57142857142858" height="63" rx="4" fill="#ffe066" opacity="0.72"/>
+<rect x="1208.857142857143" y="544.0" width="152.57142857142858" height="76" rx="4" fill="#ffe066" opacity="0.8"/>
+<rect x="1369.4285714285716" y="455.0" width="152.57142857142858" height="165" rx="4" fill="#ffe066" opacity="0.88"/>
+</svg>

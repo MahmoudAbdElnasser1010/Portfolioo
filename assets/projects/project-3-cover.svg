@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" width="1600" height="900">
+  <defs>
+    <linearGradient id="bg32" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#170f03"/>
+      <stop offset="100%" stop-color="#f8cc42"/>
+    </linearGradient>
+    <linearGradient id="card32" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="rgba(255,255,255,0.10)"/>
+      <stop offset="100%" stop-color="rgba(255,255,255,0.02)"/>
+    </linearGradient>
+    <radialGradient id="glow32" cx="30%" cy="20%" r="60%">
+      <stop offset="0%" stop-color="#f8cc42" stop-opacity="0.55"/>
+      <stop offset="100%" stop-color="#f8cc42" stop-opacity="0"/>
+    </radialGradient></defs>
+  <rect width="1600" height="900" fill="url(#bg32)"/>
+  <rect width="1600" height="900" fill="url(#glow32)"/>
+  <rect x="96.0" y="96.0" width="1408.0" height="70" rx="16" fill="url(#card32)" stroke="rgba(255,255,255,0.08)"/>
+<circle cx="136.0" cy="131.0" r="14" fill="#fad668"/>
+<rect x="1244.0" y="124.0" width="60" height="14" rx="7" fill="rgba(255,255,255,0.18)"/>
+<rect x="1334.0" y="124.0" width="60" height="14" rx="7" fill="rgba(255,255,255,0.18)"/>
+<rect x="1424.0" y="124.0" width="60" height="14" rx="7" fill="rgba(255,255,255,0.18)"/>
+<rect x="96.0" y="196.0" width="672.0" height="608.0" rx="16" fill="url(#card32)" stroke="rgba(255,255,255,0.08)"/>
+<rect x="126.0" y="236.0" width="480.0" height="18" rx="9" fill="rgba(255,255,255,0.35)"/>
+<rect x="126.0" y="268.0" width="544.0" height="12" rx="6" fill="rgba(255,255,255,0.15)"/>
+<rect x="126.0" y="292.0" width="480.0" height="12" rx="6" fill="rgba(255,255,255,0.15)"/>
+<rect x="126.0" y="336.0" width="140" height="38" rx="19" fill="#fad668"/>
+<rect x="792.0" y="196.0" width="712.0" height="608.0" rx="16" fill="url(#card32)" stroke="rgba(255,255,255,0.08)"/>
+<rect x="816.0" y="222.0" width="664.0" height="125.0" rx="10" fill="rgba(255,255,255,0.06)"/>
+<circle cx="842.0" cy="284.5" r="10" fill="#fad668" opacity="0.8"/>
+<rect x="816.0" y="361.0" width="664.0" height="125.0" rx="10" fill="rgba(255,255,255,0.06)"/>
+<circle cx="842.0" cy="423.5" r="10" fill="#fad668" opacity="0.8"/>
+<rect x="816.0" y="500.0" width="664.0" height="125.0" rx="10" fill="rgba(255,255,255,0.06)"/>
+<circle cx="842.0" cy="562.5" r="10" fill="#fad668" opacity="0.8"/>
+<rect x="816.0" y="639.0" width="664.0" height="125.0" rx="10" fill="rgba(255,255,255,0.06)"/>
+<circle cx="842.0" cy="701.5" r="10" fill="#fad668" opacity="0.8"/>
+</svg>

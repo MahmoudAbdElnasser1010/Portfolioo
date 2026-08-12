@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Alex Carter — Product Designer &amp; Front-End Engineer</title>
+<meta name="description" content="Portfolio of Alex Carter — Product Designer & Front-End Engineer building fast, modern digital products.">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 32 32%22><rect width=%2232%22 height=%2232%22 rx=%228%22 fill=%22%2304060c%22/><circle cx=%2216%22 cy=%2216%22 r=%228%22 fill=%22%23f6bf1d%22/></svg>">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div class="noise"></div>
+
+<!-- ============ NAVBAR ============ -->
+<header class="navbar" id="navbar">
+  <div class="container nav-inner">
+    <a href="#top" class="logo"><span class="dot"></span> Alex Carter</a>
+    <nav class="nav-links" id="navLinks">
+      <a href="#about">About</a>
+      <a href="#experience">Experience</a>
+      <a href="#projects">Projects</a>
+      <a href="#showcase">Showcase</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <div class="nav-cta">
+      <a href="#contact" class="btn btn-ghost">Let's Talk</a>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<!-- ============ HERO ============ -->
+<section class="hero" id="top">
+  <div class="hero-glow"></div>
+  <div class="container">
+    <div class="hero-grid">
+      <div class="hero-text">
+        <div class="hero-badge reveal in-view"><span class="pulse"></span> Available for new projects — Q3 2026</div>
+        <h1 class="reveal in-view">I design &amp; build <span class="text-gradient">digital products</span> that move fast and feel alive.</h1>
+        <p class="hero-sub reveal in-view reveal-delay-1">Product designer &amp; front-end engineer with 7+ years turning ambiguous ideas into sharp, usable interfaces — for startups, scale-ups, and everything in between.</p>
+        <div class="hero-actions reveal in-view reveal-delay-2">
+          <a href="#projects" class="btn btn-primary">
+            View my work
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M17 7H8M17 7V16"/></svg>
+          </a>
+          <a href="#contact" class="btn btn-ghost">Get in touch</a>
+        </div>
+      </div>
+      <div class="hero-image reveal in-view reveal-delay-2">
+        <img class="hero-illustration" src="assets/illustrations/hero-guy.svg" alt="Illustration of Alex Carter standing casually with his laptop" width="420" height="520">
+      </div>
+    </div>
+    <div class="hero-stats reveal in-view reveal-delay-3">
+      <div class="hero-stat"><div class="num">7+</div><div class="label">Years Experience</div></div>
+      <div class="hero-stat"><div class="num">40+</div><div class="label">Projects Shipped</div></div>
+      <div class="hero-stat"><div class="num">12</div><div class="label">Companies &amp; Startups</div></div>
+      <div class="hero-stat"><div class="num">98%</div><div class="label">Client Satisfaction</div></div>
+    </div>
+  </div>
+  <div class="scroll-cue"><span class="line"></span>Scroll</div>
+</section>
+
+<!-- ============ ABOUT ============ -->
+<section class="section" id="about">
+  <div class="container">
+    <div class="section-head reveal" style="margin: 0 auto 48px; text-align: center;">
+      <span class="eyebrow" style="justify-content:center;">About Me</span>
+      <h2>A little about how I work.</h2>
+    </div>
+
+    <div class="about-panel reveal">
+      <div class="about-tabs-nav-wrap">
+        <div class="about-tabs-nav" role="tablist">
+          <button class="tab-btn active" data-tab="bio" role="tab" aria-selected="true">Bio</button>
+          <button class="tab-btn" data-tab="skills" role="tab" aria-selected="false">Skills</button>
+          <button class="tab-btn" data-tab="facts" role="tab" aria-selected="false">Facts</button>
+        </div>
+      </div>
+
+      <div class="about-tabs-body">
+        <div class="tab-panel active" data-panel="bio">
+          <p class="lead">I'm <strong>Alex Carter</strong>, a product designer and front-end engineer based in Cairo, working remotely with founders, product teams, and agencies across the globe.</p>
+          <p>My focus sits at the intersection of <strong>design and engineering</strong> — I prototype in the browser, sweat the details of motion and type, and ship interfaces that hold up under real users and real deadlines. Over the last 7 years I've helped fintech, health-tech, and e-commerce teams take products from a blank page to launch day, and beyond.</p>
+          <p>When I'm not designing, I'm usually writing about design systems, mentoring junior designers, or tinkering with generative art.</p>
+        </div>
+
+        <div class="tab-panel" data-panel="skills">
+          <div class="skills-group">
+            <h4>Design</h4>
+            <div class="skills-cloud">
+              <span class="skill-tag">Product Design</span>
+              <span class="skill-tag">UI / UX</span>
+              <span class="skill-tag">Design Systems</span>
+              <span class="skill-tag">Motion Design</span>
+              <span class="skill-tag">Brand Identity</span>
+            </div>
+          </div>
+          <div class="skills-group">
+            <h4>Code &amp; Tools</h4>
+            <div class="skills-cloud">
+              <span class="skill-tag">Front-End Development</span>
+              <span class="skill-tag">React</span>
+              <span class="skill-tag">Figma</span>
+              <span class="skill-tag">Webflow</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="tab-panel" data-panel="facts">
+          <div class="facts-grid">
+            <div class="fact-item"><div class="k">Based in</div><div class="v">Cairo, Egypt (Remote)</div></div>
+            <div class="fact-item"><div class="k">Focus</div><div class="v">Product &amp; UI/UX Design</div></div>
+            <div class="fact-item"><div class="k">Currently</div><div class="v">Senior Designer @ Nimbus</div></div>
+            <div class="fact-item"><div class="k">Availability</div><div class="v">Open for freelance</div></div>
+            <div class="fact-item"><div class="k">Email</div><div class="v">hello@alexcarter.design</div></div>
+            <div class="fact-item"><div class="k">Resume</div><a href="#" class="v" style="color:var(--cyan-400);">Download CV ↓</a></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ EXPERIENCE ============ -->
+<section class="section section-alt" id="experience">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow">Experience</span>
+      <h2>Companies I've helped build products.</h2>
+      <p>A quick look at where I've worked and what I focused on at each stop.</p>
+    </div>
+    <div class="exp-grid">
+      <article class="exp-card reveal">
+        <div class="exp-card-top">
+          <div class="exp-logo"><img src="assets/logos/logo-1.svg" alt="" aria-hidden="true"></div>
+          <div class="exp-info">
+            <div class="exp-role">Senior Product Designer</div>
+            <div class="exp-company">Nimbus Analytics</div>
+          </div>
+          <div class="exp-date">2023 — Present</div>
+        </div>
+        <p class="exp-desc">Leading design for Nimbus's core analytics dashboard, owning the design system and partnering directly with engineering to ship weekly.</p>
+        <div class="exp-tags"><span>Design Systems</span><span>Data Viz</span><span>React</span></div>
+      </article>
+      <article class="exp-card reveal reveal-delay-1">
+        <div class="exp-card-top">
+          <div class="exp-logo"><img src="assets/logos/logo-6.svg" alt="" aria-hidden="true"></div>
+          <div class="exp-info">
+            <div class="exp-role">Product Designer</div>
+            <div class="exp-company">Fathom</div>
+          </div>
+          <div class="exp-date">2021 — 2023</div>
+        </div>
+        <p class="exp-desc">Designed the mobile banking experience end-to-end, from onboarding flows to card controls, across iOS and Android.</p>
+        <div class="exp-tags"><span>Mobile</span><span>Fintech</span><span>User Research</span></div>
+      </article>
+      <article class="exp-card reveal reveal-delay-2">
+        <div class="exp-card-top">
+          <div class="exp-logo"><img src="assets/logos/logo-4.svg" alt="" aria-hidden="true"></div>
+          <div class="exp-info">
+            <div class="exp-role">UI/UX Designer</div>
+            <div class="exp-company">Solace Commerce</div>
+          </div>
+          <div class="exp-date">2019 — 2021</div>
+        </div>
+        <p class="exp-desc">Rebuilt the storefront and checkout experience, lifting conversion and laying the groundwork for a scalable component library.</p>
+        <div class="exp-tags"><span>E-commerce</span><span>Conversion</span><span>Webflow</span></div>
+      </article>
+      <article class="exp-card reveal reveal-delay-3">
+        <div class="exp-card-top">
+          <div class="exp-logo"><img src="assets/logos/logo-7.svg" alt="" aria-hidden="true"></div>
+          <div class="exp-info">
+            <div class="exp-role">Front-End Developer</div>
+            <div class="exp-company">Halo Systems</div>
+          </div>
+          <div class="exp-date">2018 — 2019</div>
+        </div>
+        <p class="exp-desc">Built marketing sites and internal tools, and led the visual refresh of the company's brand system.</p>
+        <div class="exp-tags"><span>Brand</span><span>JavaScript</span><span>CSS</span></div>
+      </article>
+      <article class="exp-card reveal">
+        <div class="exp-card-top">
+          <div class="exp-logo"><img src="assets/logos/logo-3.svg" alt="" aria-hidden="true"></div>
+          <div class="exp-info">
+            <div class="exp-role">Junior Designer</div>
+            <div class="exp-company">Northwind Studio</div>
+          </div>
+          <div class="exp-date">2017 — 2018</div>
+        </div>
+        <p class="exp-desc">Started my career designing landing pages and pitch decks for early-stage startups.</p>
+        <div class="exp-tags"><span>Landing Pages</span><span>Pitch Decks</span></div>
+      </article>
+    </div>
+  </div>
+
+  <!-- Logo marquee -->
+  <div class="marquee-wrap reveal" style="margin-top:80px;">
+    <div class="marquee-track" id="marqueeTrack">
+      <img src="assets/logos/logo-1.svg" alt="Nimbus logo">
+      <img src="assets/logos/logo-2.svg" alt="Vertex Labs logo">
+      <img src="assets/logos/logo-3.svg" alt="Northwind logo">
+      <img src="assets/logos/logo-4.svg" alt="Solace logo">
+      <img src="assets/logos/logo-5.svg" alt="Quantify logo">
+      <img src="assets/logos/logo-6.svg" alt="Fathom logo">
+      <img src="assets/logos/logo-7.svg" alt="Halo Systems logo">
+      <img src="assets/logos/logo-8.svg" alt="Modulate logo">
+      <!-- duplicate set for seamless loop -->
+      <img src="assets/logos/logo-1.svg" alt="" aria-hidden="true">
+      <img src="assets/logos/logo-2.svg" alt="" aria-hidden="true">
+      <img src="assets/logos/logo-3.svg" alt="" aria-hidden="true">
+      <img src="assets/logos/logo-4.svg" alt="" aria-hidden="true">
+      <img src="assets/logos/logo-5.svg" alt="" aria-hidden="true">
+      <img src="assets/logos/logo-6.svg" alt="" aria-hidden="true">
+      <img src="assets/logos/logo-7.svg" alt="" aria-hidden="true">
+      <img src="assets/logos/logo-8.svg" alt="" aria-hidden="true">
+    </div>
+  </div>
+</section>
+
+<!-- ============ PROJECTS ============ -->
+<section class="section" id="projects">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow">Selected Work</span>
+      <h2>Projects I'm proud to have shipped.</h2>
+      <p>A mix of dashboards, mobile apps, and commerce platforms — each with its own set of constraints and a story worth telling.</p>
+    </div>
+    <div class="projects-grid">
+
+      <article class="project-card reveal">
+        <div class="project-media">
+          <span class="project-tag">SaaS · Analytics</span>
+          <img src="assets/projects/project-1.svg" alt="Nimbus Analytics dashboard preview">
+        </div>
+        <div class="project-body">
+          <h3>Nimbus Analytics</h3>
+          <p>A real-time analytics dashboard for growth teams — rebuilt from the ground up with a new design system and a 3x faster data pipeline.</p>
+          <a href="projects/project-1.html" class="project-link">View case study
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M17 7H8M17 7V16"/></svg>
+          </a>
+        </div>
+      </article>
+
+      <article class="project-card reveal reveal-delay-1">
+        <div class="project-media">
+          <span class="project-tag">Fintech · Mobile</span>
+          <img src="assets/projects/project-2.svg" alt="Fathom mobile banking app preview">
+        </div>
+        <div class="project-body">
+          <h3>Fathom Mobile Banking</h3>
+          <p>End-to-end design of a mobile-first banking app — onboarding, card controls, and budgeting tools used by over 200k customers.</p>
+          <a href="projects/project-2.html" class="project-link">View case study
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M17 7H8M17 7V16"/></svg>
+          </a>
+        </div>
+      </article>
+
+      <article class="project-card reveal reveal-delay-2">
+        <div class="project-media">
+          <span class="project-tag">E-commerce</span>
+          <img src="assets/projects/project-3.svg" alt="Solace Commerce platform preview">
+        </div>
+        <div class="project-body">
+          <h3>Solace Commerce</h3>
+          <p>A storefront and checkout redesign focused on speed and clarity, resulting in a measurable lift in conversion rate.</p>
+          <a href="projects/project-3.html" class="project-link">View case study
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M17 7H8M17 7V16"/></svg>
+          </a>
+        </div>
+      </article>
+
+      <article class="project-card reveal reveal-delay-3">
+        <div class="project-media">
+          <span class="project-tag">Brand System</span>
+          <img src="assets/projects/project-4.svg" alt="Halo Systems brand identity preview">
+        </div>
+        <div class="project-body">
+          <h3>Halo Brand System</h3>
+          <p>A full visual identity and component library built to scale across product, marketing, and pitch decks.</p>
+          <a href="projects/project-4.html" class="project-link">View case study
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M17 7H8M17 7V16"/></svg>
+          </a>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<!-- ============ SHOWCASE / HERO SAMPLES CAROUSEL ============ -->
+<section class="section section-alt" id="showcase">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow">Design Showcase</span>
+      <h2>Hero sections I've designed.</h2>
+      <p>A few samples of landing page hero sections from recent projects — swipe through to see the range.</p>
+    </div>
+
+    <div class="carousel reveal">
+      <div class="carousel-viewport">
+        <div class="carousel-track" id="carouselTrack">
+
+          <div class="carousel-slide">
+            <div class="browser-mock">
+              <div class="bar"><span></span><span></span><span></span><div class="url">orbitfinance.com</div></div>
+              <div class="mock-hero" style="background:radial-gradient(circle at 30% 20%, #f6bf1d 0%, #04060c 65%);">
+                <div class="mock-eyebrow">Orbit Finance</div>
+                <h3>Banking that thinks ahead.</h3>
+                <p>A hero concept for a fintech startup — bold gradient, confident type, one clear action.</p>
+                <div class="mock-btns"><span class="mock-btn solid">Open an account</span><span class="mock-btn outline">See how it works</span></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="carousel-slide">
+            <div class="browser-mock">
+              <div class="bar"><span></span><span></span><span></span><div class="url">lumenhealth.io</div></div>
+              <div class="mock-hero" style="background:radial-gradient(circle at 70% 30%, #ffe066 0%, #04060c 65%);">
+                <div class="mock-eyebrow">Lumen Health</div>
+                <h3>Care that fits your life.</h3>
+                <p>A calmer palette for a health-tech landing page, built around trust and clarity.</p>
+                <div class="mock-btns"><span class="mock-btn solid">Book a visit</span><span class="mock-btn outline">Learn more</span></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="carousel-slide">
+            <div class="browser-mock">
+              <div class="bar"><span></span><span></span><span></span><div class="url">drifttravel.co</div></div>
+              <div class="mock-hero" style="background:linear-gradient(135deg, #a17908 0%, #04060c 70%);">
+                <div class="mock-eyebrow">Drift Travel</div>
+                <h3>Go further, plan less.</h3>
+                <p>A travel booking hero designed to feel light, fast, and a little bit adventurous.</p>
+                <div class="mock-btns"><span class="mock-btn solid">Plan a trip</span><span class="mock-btn outline">Explore deals</span></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="carousel-slide">
+            <div class="browser-mock">
+              <div class="bar"><span></span><span></span><span></span><div class="url">fusestudio.design</div></div>
+              <div class="mock-hero" style="background:radial-gradient(circle at 20% 80%, #fad668 0%, #04060c 65%);">
+                <div class="mock-eyebrow">Fuse Studio</div>
+                <h3>Design that ships.</h3>
+                <p>A punchy agency hero built to convert visitors into discovery calls.</p>
+                <div class="mock-btns"><span class="mock-btn solid">Start a project</span><span class="mock-btn outline">View work</span></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="carousel-slide">
+            <div class="browser-mock">
+              <div class="bar"><span></span><span></span><span></span><div class="url">novarobotics.ai</div></div>
+              <div class="mock-hero" style="background:radial-gradient(circle at 50% 10%, #fff3c4 0%, #04060c 60%);">
+                <div class="mock-eyebrow">Nova Robotics</div>
+                <h3>Automation, made approachable.</h3>
+                <p>A deep-tech hero that had to explain a complex product in one glance.</p>
+                <div class="mock-btns"><span class="mock-btn solid">Request a demo</span><span class="mock-btn outline">Read the specs</span></div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="carousel-controls">
+        <div class="carousel-caption"><strong id="carouselTitle">Orbit Finance</strong> — hero concept</div>
+        <div style="display:flex; align-items:center; gap:24px;">
+          <div class="carousel-dots" id="carouselDots"></div>
+          <div class="carousel-arrows">
+            <button class="carousel-arrow" id="carouselPrev" aria-label="Previous slide">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 18l-6-6 6-6"/></svg>
+            </button>
+            <button class="carousel-arrow" id="carouselNext" aria-label="Next slide">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 18l6-6-6-6"/></svg>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CTA ============ -->
+<section class="section" id="contact">
+  <div class="container">
+    <div class="cta-box reveal">
+      <span class="eyebrow" style="justify-content:center;">Let's Work Together</span>
+      <h2>Have a project in mind? <br>Let's build something powerful.</h2>
+      <p>I'm currently taking on a limited number of freelance projects and full-time opportunities for Q3 2026.</p>
+      <div class="cta-actions">
+        <a href="mailto:hello@alexcarter.design" class="btn btn-primary">
+          Email me
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M17 7H8M17 7V16"/></svg>
+        </a>
+        <a href="#" class="btn btn-ghost">Download résumé</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FOOTER ============ -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <a href="#top" class="logo"><span class="dot"></span> Alex Carter</a>
+        <p>Product designer &amp; front-end engineer helping startups and teams design and ship better digital products.</p>
+        <div class="footer-social">
+          <a href="#" aria-label="GitHub"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M9 19c-4.3 1.4-4.3-2.5-6-3m12 5v-3.5c0-1 .1-1.4-.5-2 2.8-.3 5.5-1.4 5.5-6a4.6 4.6 0 0 0-1.3-3.2 4.2 4.2 0 0 0-.1-3.2s-1.1-.3-3.5 1.3a12.3 12.3 0 0 0-6.2 0C6.5 2.8 5.4 3.1 5.4 3.1a4.2 4.2 0 0 0-.1 3.2A4.6 4.6 0 0 0 4 9.5c0 4.6 2.7 5.7 5.5 6-.6.6-.6 1.2-.5 2V21"/></svg></a>
+          <a href="#" aria-label="LinkedIn"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/><path d="M10 9h3.6v2.1h.05c.5-.95 1.75-2.1 3.6-2.1 3.85 0 4.75 2.5 4.75 5.8V21H18v-6.6c0-1.6 0-3.6-2.2-3.6-2.2 0-2.5 1.7-2.5 3.5V21H10z"/></svg></a>
+          <a href="#" aria-label="X / Twitter"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 4l16 16M20 4L4 20"/></svg></a>
+          <a href="#" aria-label="Dribbble"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="9"/><path d="M4.5 9c4 1.5 9 1.7 14.8.7M3.5 15c5-1.3 9.7-1 14 1.5M11 3c2.7 3.5 4.5 8 4.5 13.5"/></svg></a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>Navigate</h4>
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#showcase">Showcase</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Projects</h4>
+        <ul>
+          <li><a href="projects/project-1.html">Nimbus Analytics</a></li>
+          <li><a href="projects/project-2.html">Fathom Banking</a></li>
+          <li><a href="projects/project-3.html">Solace Commerce</a></li>
+          <li><a href="projects/project-4.html">Halo Brand System</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <ul>
+          <li><a href="mailto:hello@alexcarter.design">hello@alexcarter.design</a></li>
+          <li><a href="#">Cairo, Egypt</a></li>
+          <li><a href="#contact">Open for freelance</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© <span id="year"></span> Alex Carter. All rights reserved.</span>
+      <a href="#top" class="back-to-top">Back to top
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 19V5M5 12l7-7 7 7"/></svg>
+      </a>
+    </div>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>
