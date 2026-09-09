@@ -575,7 +575,7 @@ body::before {
   max-width: 280px;
 }
 .mock-hero {
-  min-height: 460px;
+  min-height: clamp(520px, 60vw, 720px);
   display: flex;
   flex-direction: column;
   align-items: center;
