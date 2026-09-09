@@ -575,20 +575,19 @@ body::before {
   max-width: 280px;
 }
 .mock-hero {
-  min-height: clamp(520px, 60vw, 720px);
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   text-align: center;
-  padding: 60px 40px;
   position: relative;
   overflow: hidden;
 }
 .mock-hero .mock-img {
-  position: absolute; inset: 0;
-  width: 100%; height: 100%;
-  object-fit: cover;
+  position: relative;
+  width: 100%;
+  height: auto;
+  object-fit: contain;
   display: block;
 }
 .mock-hero .mock-glow {
