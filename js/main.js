@@ -100,6 +100,7 @@ document.addEventListener('DOMContentLoaded', () => {
     let autoTimer = null;
 
     const titles = slides.map(slide => {
+      if (slide.dataset.title) return slide.dataset.title;
       const eyebrow = slide.querySelector('.mock-eyebrow');
       return eyebrow ? eyebrow.textContent.trim() : '';
     });
