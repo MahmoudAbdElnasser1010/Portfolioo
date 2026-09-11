@@ -155,4 +155,67 @@ document.addEventListener('DOMContentLoaded', () => {
     restartAuto();
   }
 
+  /* ---------- Project-detail image slider (manual, no autoplay) ---------- */
+  document.querySelectorAll('[data-pd-slider]').forEach(slider => {
+    const track = slider.querySelector('.pd-slider-track');
+    const slides = Array.from(track.children);
+    if (!slides.length) return;
+
+    const prevBtn = slider.querySelector('.pd-slider-arrow.prev');
+    const nextBtn = slider.querySelector('.pd-slider-arrow.next');
+    const dotsWrap = slider.querySelector('.pd-slider-dots');
+    const curEl = slider.querySelector('.pd-slider-counter .cur');
+    const totalEl = slider.querySelector('.pd-slider-counter .total');
+    let index = 0;
+
+    if (totalEl) totalEl.textContent = slides.length;
+
+    let dots = [];
+    if (dotsWrap) {
+      slides.forEach((_, i) => {
+        const dot = document.createElement('button');
+        dot.className = 'pd-slider-dot' + (i === 0 ? ' active' : '');
+        dot.setAttribute('aria-label', `Go to image ${i + 1}`);
+        dot.addEventListener('click', () => goTo(i));
+        dotsWrap.appendChild(dot);
+      });
+      dots = Array.from(dotsWrap.children);
+    }
+
+    function render() {
+      track.style.transform = `translateX(-${index * 100}%)`;
+      dots.forEach((d, i) => d.classList.toggle('active', i === index));
+      if (curEl) curEl.textContent = index + 1;
+      if (prevBtn) prevBtn.disabled = index === 0;
+      if (nextBtn) nextBtn.disabled = index === slides.length - 1;
+    }
+
+    function goTo(i) {
+      index = Math.max(0, Math.min(i, slides.length - 1));
+      render();
+    }
+    const next = () => goTo(index + 1);
+    const prev = () => goTo(index - 1);
+
+    if (nextBtn) nextBtn.addEventListener('click', next);
+    if (prevBtn) prevBtn.addEventListener('click', prev);
+
+    // Keyboard support when the slider is focused
+    slider.setAttribute('tabindex', '0');
+    slider.addEventListener('keydown', (e) => {
+      if (e.key === 'ArrowRight') { e.preventDefault(); next(); }
+      if (e.key === 'ArrowLeft') { e.preventDefault(); prev(); }
+    });
+
+    // Touch swipe
+    let touchStartX = 0;
+    track.addEventListener('touchstart', (e) => { touchStartX = e.touches[0].clientX; }, { passive: true });
+    track.addEventListener('touchend', (e) => {
+      const dx = e.changedTouches[0].clientX - touchStartX;
+      if (Math.abs(dx) > 40) dx > 0 ? prev() : next();
+    }, { passive: true });
+
+    render();
+  });
+
 });
