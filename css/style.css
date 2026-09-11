@@ -501,8 +501,157 @@ body::before {
    ========================================================================== */
 .projects-grid {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 32px;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
+/* ---------- Work gallery tiles (Behance-style grid) ---------- */
+.work-card {
+  position: relative;
+  display: block;
+  aspect-ratio: 4 / 5;
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  background: var(--bg-elevated);
+  border: 1px solid var(--border);
+  transition: transform 0.5s var(--ease), border-color 0.5s var(--ease),
+              box-shadow 0.5s var(--ease);
+  isolation: isolate;
+}
+.work-card:hover,
+.work-card:focus-visible {
+  transform: translateY(-8px);
+  border-color: var(--border-strong);
+  box-shadow: var(--shadow-card), var(--glow-blue);
+  outline: none;
+}
+.work-media { position: absolute; inset: 0; }
+.work-media img {
+  width: 100%; height: 100%;
+  object-fit: cover;
+  transition: transform 0.7s var(--ease);
+}
+.work-card:hover .work-media img,
+.work-card:focus-visible .work-media img { transform: scale(1.08); }
+
+.work-overlay {
+  position: absolute; inset: 0;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 20px;
+  background: linear-gradient(180deg, rgba(4,6,12,0) 45%, rgba(4,6,12,0.55) 70%, rgba(4,6,12,0.92) 100%);
+}
+.work-tag {
+  position: absolute; top: 16px; left: 16px;
+  font-size: 11.5px; font-weight: 600; letter-spacing: 0.04em;
+  padding: 6px 12px; border-radius: 100px;
+  background: rgba(4,6,12,0.6);
+  border: 1px solid var(--border-strong);
+  backdrop-filter: blur(8px);
+  color: var(--cyan-300);
+  transform: translateY(-6px);
+  opacity: 0;
+  transition: opacity 0.45s var(--ease), transform 0.45s var(--ease);
+}
+.work-card:hover .work-tag,
+.work-card:focus-visible .work-tag { opacity: 1; transform: translateY(0); }
+
+.work-foot { transform: translateY(6px); transition: transform 0.45s var(--ease); }
+.work-card:hover .work-foot,
+.work-card:focus-visible .work-foot { transform: translateY(0); }
+.work-title {
+  font-size: 19px;
+  line-height: 1.25;
+  color: var(--text);
+  margin-bottom: 8px;
+}
+.work-cta {
+  display: inline-flex; align-items: center; gap: 7px;
+  font-size: 13.5px; font-weight: 600;
+  color: var(--blue-500);
+  max-height: 0;
+  opacity: 0;
+  overflow: hidden;
+  transform: translateY(4px);
+  transition: opacity 0.4s var(--ease), transform 0.4s var(--ease), max-height 0.4s var(--ease);
+}
+.work-cta svg { width: 15px; height: 15px; transition: transform 0.3s var(--ease); }
+.work-card:hover .work-cta,
+.work-card:focus-visible .work-cta {
+  opacity: 1; max-height: 40px; transform: translateY(0);
+}
+.work-card:hover .work-cta svg,
+.work-card:focus-visible .work-cta svg { transform: translate(3px, -3px); }
+
+/* ---------- Behance CTA tile (9th item, brand colors) ---------- */
+.work-behance {
+  background: var(--grad-primary);
+  border: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 26px;
+  color: #04060c;
+}
+.work-behance::before {
+  content: '';
+  position: absolute; inset: 0;
+  background: radial-gradient(circle at 70% 15%, rgba(255,255,255,0.35), transparent 55%);
+  opacity: 0;
+  transition: opacity 0.5s var(--ease);
+}
+.work-behance:hover::before,
+.work-behance:focus-visible::before { opacity: 1; }
+.behance-dot {
+  position: absolute;
+  top: 34%; left: 50%;
+  width: 16px; height: 16px;
+  border-radius: 50%;
+  background: rgba(4,6,12,0.28);
+  transform: translate(-50%, -50%);
+  transition: transform 0.6s var(--ease);
+}
+.work-behance:hover .behance-dot,
+.work-behance:focus-visible .behance-dot { transform: translate(-50%, -50%) scale(1.6); }
+.behance-logo {
+  position: relative; z-index: 1;
+  flex: 1;
+  display: flex; align-items: center; justify-content: center;
+}
+.behance-logo svg {
+  width: 60%; max-width: 150px; height: auto;
+  fill: #04060c;
+  transition: transform 0.5s var(--ease);
+}
+.work-behance:hover .behance-logo svg,
+.work-behance:focus-visible .behance-logo svg { transform: scale(1.06); }
+.behance-foot { position: relative; z-index: 1; }
+.behance-eyebrow {
+  display: block;
+  font-size: 11.5px; font-weight: 700; letter-spacing: 0.14em; text-transform: uppercase;
+  color: rgba(4,6,12,0.6);
+  margin-bottom: 4px;
+}
+.behance-foot h3 {
+  font-size: 26px;
+  color: #04060c;
+  margin-bottom: 10px;
+}
+.behance-visit {
+  display: inline-flex; align-items: center; gap: 7px;
+  font-size: 14px; font-weight: 600;
+  color: #04060c;
+}
+.behance-visit svg { width: 15px; height: 15px; transition: transform 0.35s var(--ease); }
+.work-behance:hover .behance-visit svg,
+.work-behance:focus-visible .behance-visit svg { transform: translate(4px, -4px); }
+
+@media (prefers-reduced-motion: reduce) {
+  .work-card, .work-media img, .work-tag, .work-foot, .work-cta,
+  .behance-dot, .behance-logo svg { transition: none; }
+  .work-card:hover, .work-card:focus-visible { transform: none; }
 }
 .project-card {
   background: var(--surface);
@@ -854,7 +1003,7 @@ body::before {
   .hero-actions { justify-content: center; }
   .hero-image { order: 2; }
   .hero-illustration { max-width: 300px; margin: 0 auto; }
-  .projects-grid { grid-template-columns: 1fr; }
+  .projects-grid { grid-template-columns: repeat(2, 1fr); }
   .footer-top { grid-template-columns: 1fr 1fr; }
   .pd-content { grid-template-columns: 1fr; }
   .pd-toc { display: none; }
@@ -874,6 +1023,7 @@ body::before {
   .nav-toggle { display: flex; }
   .hero-stats { grid-template-columns: repeat(2, 1fr); }
   .hero-stat:nth-child(3), .hero-stat:nth-child(4) { border-top: 1px solid var(--border); }
+  .projects-grid { grid-template-columns: 1fr; }
   .exp-card { padding: 22px 20px; }
   .exp-date { margin-left: 68px; }
   .footer-top { grid-template-columns: 1fr; gap: 40px; }
