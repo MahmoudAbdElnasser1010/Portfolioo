@@ -1,10 +1,10 @@
 import Link from 'next/link';
-import { getAdjacent, sliderImages } from '@/lib/projects';
+import { getAdjacent } from '@/lib/projects';
 import CTA from './CTA';
 
 export default function ProjectDetail({ project }) {
   const { prev, next } = getAdjacent(project.slug);
-  const slides = sliderImages(project.imageBase);
+  const slides = project.slides;
 
   return (
     <main id="top">
