@@ -11,7 +11,7 @@ export function generateMetadata({ params }) {
   const project = getProject(params.slug);
   if (!project) return {};
   return {
-    title: `${project.card.title} — Mahmoud Abdelnasser`,
+    title: `${project.title} — Mahmoud Abdelnasser`,
     description: project.sub,
   };
 }

@@ -22,13 +22,13 @@ export default function Projects() {
               key={p.slug}
               href={`/projects/${p.slug}`}
               className={`work-card reveal${i % 4 === 0 ? '' : ` reveal-delay-${i % 4}`}`}
-              aria-label={`${p.card.title} — view project`}
+              aria-label={`${p.title} — view project`}
             >
               <div className="work-media"><img src={`/assets/projects/${p.card.image}`} alt={p.card.alt} /></div>
               <div className="work-overlay">
                 <span className="work-tag">{p.card.tag}</span>
                 <div className="work-foot">
-                  <h3 className="work-title">{p.card.title}</h3>
+                  <h3 className="work-title">{p.title}</h3>
                   <span className="work-cta">View project <Arrow /></span>
                 </div>
               </div>
