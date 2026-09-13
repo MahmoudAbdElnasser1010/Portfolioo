@@ -91,6 +91,32 @@ export default function ClientScripts() {
       cleanups.push(() => revealObserver.disconnect());
     }
 
+    /* ---------- Project-detail TOC scrollspy ---------- */
+    const toc = document.querySelector('.pd-toc');
+    if (toc) {
+      const tocLinks = Array.from(toc.querySelectorAll('a'));
+      const sections = tocLinks
+        .map((a) => document.getElementById(a.getAttribute('href').slice(1)))
+        .filter(Boolean);
+      if (sections.length) {
+        const tocSpy = new IntersectionObserver(
+          (entries) => {
+            entries.forEach((entry) => {
+              if (entry.isIntersecting) {
+                const id = entry.target.id;
+                tocLinks.forEach((a) =>
+                  a.classList.toggle('active', a.getAttribute('href') === `#${id}`)
+                );
+              }
+            });
+          },
+          { rootMargin: '-45% 0px -50% 0px', threshold: 0 }
+        );
+        sections.forEach((s) => tocSpy.observe(s));
+        cleanups.push(() => tocSpy.disconnect());
+      }
+    }
+
     /* ---------- About section tabs ---------- */
     const tabBtns = Array.from(document.querySelectorAll('.tab-btn'));
     if (tabBtns.length) {
