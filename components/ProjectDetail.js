@@ -2,9 +2,8 @@ import Link from 'next/link';
 import { getAdjacent } from '@/lib/projects';
 import CTA from './CTA';
 
-export default function ProjectDetail({ project }) {
+export default function ProjectDetail({ project, slides = [] }) {
   const { prev, next } = getAdjacent(project.slug);
-  const slides = project.slides;
 
   return (
     <main id="top">

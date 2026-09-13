@@ -1,5 +1,6 @@
 import { notFound } from 'next/navigation';
 import { projects, getProject } from '@/lib/projects';
+import { getProjectSlides } from '@/lib/slides';
 import ProjectDetail from '@/components/ProjectDetail';
 
 export function generateStaticParams() {
@@ -18,5 +19,6 @@ export function generateMetadata({ params }) {
 export default function ProjectPage({ params }) {
   const project = getProject(params.slug);
   if (!project) notFound();
-  return <ProjectDetail project={project} />;
+  const slides = getProjectSlides(project.slug);
+  return <ProjectDetail project={project} slides={slides} />;
 }
