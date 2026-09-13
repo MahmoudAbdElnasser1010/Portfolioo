@@ -5,10 +5,6 @@ import CTA from './CTA';
 export default function ProjectDetail({ project }) {
   const { prev, next } = getAdjacent(project.slug);
   const slides = sliderImages(project.imageBase);
-  const gallery = [
-    `/assets/projects/${project.imageBase}-gallery-1.svg`,
-    `/assets/projects/${project.imageBase}-gallery-2.svg`,
-  ];
 
   return (
     <main id="top">
@@ -33,32 +29,14 @@ export default function ProjectDetail({ project }) {
       </section>
 
       <div className="container">
-        <div className="pd-slider reveal" data-pd-slider aria-roledescription="carousel" aria-label={`${project.card.title} project images`}>
-          <div className="pd-slider-counter"><span className="cur">1</span> / <span className="total">{slides.length}</span></div>
-          <div className="pd-slider-viewport">
-            <div className="pd-slider-track">
-              {slides.map((src, i) => (
-                <div className="pd-slide" key={i}><img src={src} alt={`${project.card.title} preview ${i + 1}`} /></div>
-              ))}
-            </div>
-          </div>
-          <button className="pd-slider-arrow prev" aria-label="Previous image">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M15 18l-6-6 6-6" /></svg>
-          </button>
-          <button className="pd-slider-arrow next" aria-label="Next image">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M9 18l6-6-6-6" /></svg>
-          </button>
-          <div className="pd-slider-dots"></div>
-        </div>
-
         <div className="pd-content">
           <aside className="pd-toc reveal">
             <div className="label">On this page</div>
             <ul>
               <li><a href="#overview">Overview</a></li>
               <li><a href="#challenge">The Challenge</a></li>
-              <li><a href="#approach">The Approach</a></li>
-              <li><a href="#gallery">Gallery</a></li>
+              <li><a href="#process">Process</a></li>
+              <li><a href="#screens">Screens</a></li>
               <li><a href="#results">Results</a></li>
             </ul>
           </aside>
@@ -77,19 +55,41 @@ export default function ProjectDetail({ project }) {
               </ul>
             </div>
 
-            <div className="pd-block reveal" id="approach">
-              <h2>The Approach</h2>
-              <p>{project.approach.intro}</p>
-              <ul className="pd-list">
-                {project.approach.list.map((li, i) => <li key={i}>{li}</li>)}
-              </ul>
+            <div className="pd-block reveal" id="process">
+              <h2>Process</h2>
+              {project.process.intro && <p>{project.process.intro}</p>}
+              <ol className="pd-process">
+                {project.process.steps.map((step, i) => (
+                  <li className="pd-step" key={i}>
+                    <span className="pd-step-num">{i + 1}</span>
+                    <div className="pd-step-body">
+                      <h3>{step.title}</h3>
+                      {step.desc && <p>{step.desc}</p>}
+                    </div>
+                  </li>
+                ))}
+              </ol>
             </div>
 
-            <div className="pd-block reveal" id="gallery">
-              <h2>Gallery</h2>
+            <div className="pd-block reveal" id="screens">
+              <h2>Screens</h2>
               <p>A closer look at a few key screens from the final product.</p>
-              <div className="pd-gallery">
-                {gallery.map((src, i) => <img key={i} src={src} alt={`${project.card.title} screen detail ${i + 1}`} />)}
+              <div className="pd-slider" data-pd-slider aria-roledescription="carousel" aria-label={`${project.card.title} screens`}>
+                <div className="pd-slider-counter"><span className="cur">1</span> / <span className="total">{slides.length}</span></div>
+                <div className="pd-slider-viewport">
+                  <div className="pd-slider-track">
+                    {slides.map((src, i) => (
+                      <div className="pd-slide" key={i}><img src={src} alt={`${project.card.title} screen ${i + 1}`} /></div>
+                    ))}
+                  </div>
+                </div>
+                <button className="pd-slider-arrow prev" aria-label="Previous image">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M15 18l-6-6 6-6" /></svg>
+                </button>
+                <button className="pd-slider-arrow next" aria-label="Next image">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M9 18l6-6-6-6" /></svg>
+                </button>
+                <div className="pd-slider-dots"></div>
               </div>
             </div>
 
