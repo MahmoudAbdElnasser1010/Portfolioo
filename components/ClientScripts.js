@@ -117,6 +117,45 @@ export default function ClientScripts() {
       }
     }
 
+    /* ---------- Copy-to-clipboard buttons (contact info) ---------- */
+    const copyBtns = Array.from(document.querySelectorAll('.copy-btn'));
+    if (copyBtns.length) {
+      const handlers = [];
+      copyBtns.forEach((btn) => {
+        let timer = null;
+        const onClick = async () => {
+          const text = btn.getAttribute('data-copy') || '';
+          try {
+            if (navigator.clipboard && window.isSecureContext) {
+              await navigator.clipboard.writeText(text);
+            } else {
+              const ta = document.createElement('textarea');
+              ta.value = text;
+              ta.style.position = 'fixed';
+              ta.style.opacity = '0';
+              document.body.appendChild(ta);
+              ta.select();
+              document.execCommand('copy');
+              document.body.removeChild(ta);
+            }
+            btn.classList.add('copied');
+            if (timer) clearTimeout(timer);
+            timer = setTimeout(() => btn.classList.remove('copied'), 1600);
+          } catch {
+            /* clipboard blocked — ignore */
+          }
+        };
+        btn.addEventListener('click', onClick);
+        handlers.push([btn, onClick, () => timer && clearTimeout(timer)]);
+      });
+      cleanups.push(() =>
+        handlers.forEach(([b, h, clear]) => {
+          b.removeEventListener('click', h);
+          clear();
+        })
+      );
+    }
+
     /* ---------- About section tabs ---------- */
     const tabBtns = Array.from(document.querySelectorAll('.tab-btn'));
     if (tabBtns.length) {
