@@ -36,7 +36,6 @@ export default function ProjectDetail({ project, slides = [] }) {
               <li><a href="#challenge">The Challenge</a></li>
               <li><a href="#process">Process</a></li>
               <li><a href="#screens">Screens</a></li>
-              <li><a href="#results">Results</a></li>
             </ul>
           </aside>
 
@@ -89,16 +88,6 @@ export default function ProjectDetail({ project, slides = [] }) {
                   <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M9 18l6-6-6-6" /></svg>
                 </button>
                 <div className="pd-slider-dots"></div>
-              </div>
-            </div>
-
-            <div className="pd-block reveal" id="results">
-              <h2>Results</h2>
-              <p>{project.results.intro}</p>
-              <div className="pd-results">
-                {project.results.cards.map((c, i) => (
-                  <div className="pd-result-card" key={i}><div className="num">{c.num}</div><div className="label">{c.label}</div></div>
-                ))}
               </div>
             </div>
 
