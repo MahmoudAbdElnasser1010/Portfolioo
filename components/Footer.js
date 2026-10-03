@@ -1,6 +1,9 @@
 import Link from 'next/link';
 import { projects } from '@/lib/projects';
 
+// Footer-only display names, keyed by project order (does not affect cards).
+const footerNames = { 1: 'Sporship Project', 2: 'PPK Project' };
+
 export default function Footer() {
   return (
     <footer className="footer">
@@ -31,7 +34,7 @@ export default function Footer() {
             <h4>Projects</h4>
             <ul>
               {projects.slice(0, 4).map((p) => (
-                <li key={p.slug}><Link href={`/projects/${p.slug}`}>{p.card.title}</Link></li>
+                <li key={p.slug}><Link href={`/projects/${p.slug}`}>{footerNames[p.order] || p.card.title}</Link></li>
               ))}
             </ul>
           </div>
