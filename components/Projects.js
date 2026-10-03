@@ -19,7 +19,7 @@ export default function Projects() {
         </div>
         <div className="projects-grid">
           {projects.map((p, i) => {
-            const cover = getProjectCover(p.slug) || `/assets/projects/${p.card.image}`;
+            const cover = getProjectCover(p.order) || `/assets/projects/${p.card.image}`;
             return (
             <Link
               key={p.slug}

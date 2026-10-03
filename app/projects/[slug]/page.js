@@ -19,6 +19,6 @@ export function generateMetadata({ params }) {
 export default function ProjectPage({ params }) {
   const project = getProject(params.slug);
   if (!project) notFound();
-  const slides = getProjectSlides(project.slug);
+  const slides = getProjectSlides(`project-${project.order}`);
   return <ProjectDetail project={project} slides={slides} />;
 }
