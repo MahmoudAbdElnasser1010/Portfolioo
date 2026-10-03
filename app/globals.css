@@ -993,8 +993,8 @@ body::before {
   transition: all 0.3s var(--ease);
 }
 .footer-social a:hover { background: var(--grad-primary); border-color: transparent; }
-.footer-social a:hover svg { stroke: #051020; }
-.footer-social svg { width: 17px; height: 17px; stroke: var(--text-dim); transition: stroke 0.3s var(--ease); }
+.footer-social a:hover svg { fill: #051020; }
+.footer-social svg { width: 16px; height: 16px; fill: var(--text-dim); transition: fill 0.3s var(--ease); }
 .footer-col h4 { font-size: 13.5px; text-transform: uppercase; letter-spacing: 0.08em; color: var(--text-dimmer); margin-bottom: 20px; }
 .footer-col ul li { margin-bottom: 13px; }
 .footer-col a { color: var(--text-dim); font-size: 14.5px; transition: color 0.3s var(--ease); }
