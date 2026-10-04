@@ -41,7 +41,8 @@ export default function Experience() {
         </div>
       </div>
 
-      {/* Logo marquee */}
+      {/* Logo marquee — temporarily hidden. Uncomment to bring it back. */}
+      {/*
       <div className="marquee-wrap reveal" style={{ marginTop: 80 }}>
         <div className="marquee-track" id="marqueeTrack">
           {logos.map((n) => (
@@ -52,6 +53,7 @@ export default function Experience() {
           ))}
         </div>
       </div>
+      */}
     </section>
   );
 }
