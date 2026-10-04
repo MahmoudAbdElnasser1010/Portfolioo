@@ -12,8 +12,8 @@ export default function Showcase() {
       <div className="container">
         <div className="section-head reveal">
           <span className="eyebrow">Design Showcase</span>
-          <h2>Hero sections I&apos;ve designed.</h2>
-          <p>A few samples of landing page hero sections from recent projects — swipe through to see the range.</p>
+          <h2>Explore Some Design Shots</h2>
+          <p>A few samples of shots from recent projects — swipe through to see the range.</p>
         </div>
 
         <div className="carousel reveal">
