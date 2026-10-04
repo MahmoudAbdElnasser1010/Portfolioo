@@ -61,7 +61,7 @@ export default function About() {
                 <div className="fact-item"><div className="k">Currently</div><div className="v">Senior Designer @ Arcorp</div></div>
                 <div className="fact-item"><div className="k">Phone Number</div><div className="v">+20 111 0920 448</div></div>
                 <div className="fact-item"><div className="k">Email</div><div className="v">mahmoudabdelnasser153@gmail.com</div></div>
-                <div className="fact-item"><div className="k">Resume</div><a href="#" className="v" style={{ color: 'var(--cyan-400)' }}>Download CV ↓</a></div>
+                
               </div>
             </div>
           </div>
