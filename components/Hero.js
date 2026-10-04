@@ -12,7 +12,7 @@ export default function Hero() {
                 View my work
                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M7 17L17 7M17 7H8M17 7V16" /></svg>
               </a>
-              <a href="/assets/moenasserux.pdf" className="btn btn-ghost" download>Download résumé</a>
+              <a href="/assets/Mahmoud.N.pdf" className="btn btn-ghost" download>Download résumé</a>
             </div>
           </div>
           <div className="hero-image reveal in-view reveal-delay-2">
